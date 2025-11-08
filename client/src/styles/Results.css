@@ -1,0 +1,200 @@
+/* styles/Results.css */
+.results-container {
+  min-height: 100vh;
+  background: #F5F5DC;
+  padding: 20px;
+}
+
+.results-header {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.results-header h1 {
+  color: #6B4423;
+  margin: 0;
+}
+
+.results-header h2 {
+  color: #8B7355;
+  margin: 5px 0 0 0;
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.result-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #8B7355;
+  transition: transform 0.3s;
+}
+
+.result-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.result-card h3 {
+  color: #6B4423;
+  margin: 0 0 20px 0;
+  font-size: 1.2rem;
+}
+
+.result-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.stat-item:last-child {
+  border-bottom: none;
+}
+
+.stat-label {
+  color: #8B7355;
+  font-weight: 500;
+}
+
+.stat-value {
+  color: #6B4423;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.status-badge {
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-badge.passed {
+  background: #DEB887;
+  color: #6B4423;
+}
+
+.status-badge.failed {
+  background: #F5DEB3;
+  color: #8B4513;
+}
+
+.empty-state {
+  text-align: center;
+  color: #999;
+  padding: 60px 20px;
+  font-size: 18px;
+  background: white;
+  border-radius: 10px;
+}
+
+/* Faculty Results View */
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-top: 4px solid #8B7355;
+}
+
+.stat-card h3 {
+  color: #8B7355;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  font-weight: normal;
+}
+
+.stat-number {
+  color: #6B4423;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.results-table-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.results-table th,
+.results-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.results-table th {
+  background: #FAFAF8;
+  color: #6B4423;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+}
+
+.results-table tr:hover {
+  background: #FAFAF8;
+}
+
+.results-table td {
+  color: #8B7355;
+}
+
+.btn {
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.btn-secondary {
+  background-color: #A0826D;
+  color: #F5F5DC;
+}
+
+.btn-secondary:hover {
+  background-color: #8B7355;
+}
